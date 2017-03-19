@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="work" extends="struts-default" namespace="">
+
+
+		<action name="workasc" class="workaction" method="getPageList">
+			<result name="success">work.jsp</result>
+		</action>
+		<action name="workdesc" class="workaction" method="getPageDesc">
+			<result name="success">work.jsp</result>
+		</action>
+		<action name="getPageList" class="workaction" method="getPageList">
+			<result name="success">work.jsp</result>
+		</action>
+		<action name="queryWork" class="workaction" method="queryWork">
+			<result name="success">work2.jsp</result>
+		</action>
+		<action name="getRate" class="workaction" method="queryRate">
+			<result name="success">rate.jsp</result>
+		</action>
+
+
+
+	</package>
+
+</struts>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="user" extends="struts-default" namespace="">
+
+
+		<action name="userasc" class="useraction" method="getPageList">
+			<result name="success">user.jsp</result>
+		</action>
+		<action name="getPageList" class="useraction" method="getPageList">
+			<result name="success">user.jsp</result>
+		</action>
+
+		<action name="userdesc" class="useraction" method="getPageDesc">
+			<result name="success">user.jsp</result>
+		</action>
+		<action name="normalman" class="useraction" method="findMan">
+			<result name="success">num.jsp</result>
+		</action>
+		<action name="normalwoman" class="useraction" method="findWoman">
+			<result name="success">num.jsp</result>
+		</action>
+
+
+
+	</package>
+
+
+</struts>
